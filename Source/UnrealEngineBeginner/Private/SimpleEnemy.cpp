@@ -10,6 +10,7 @@ ASimpleEnemy::ASimpleEnemy()
 	PrimaryActorTick.bCanEverTick = true;
 
 	EnemyMesh = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("EnemyMesh"));
+	EnemyMesh->SetSimulatePhysics(true);
 
 }
 
